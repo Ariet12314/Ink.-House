@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  width: 50%;
+}
+.col-4 {
+  width: 33.33%;
+  padding: 15px;
+}
+.header {
+  padding: 40px;
+  background-color: #e1ede6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 60px;
+}
+
+.header__menu-link {
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.header__menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.s1-card h1 strong {
+  color: #598d66;
+}
+.s1-card {
+  padding: 145px 0 0 0;
+}
+.s1-card h1 {
+  font-size: 60px;
+  width: 540px;
+  padding: 0 0 20px 0;
+}
+.s1-card p {
+  color: #86928b;
+  padding: 0 0 60px 0;
+}
+.s1-card button {
+  border: 1px solid #598d66;
+  color: #598d66;
+  background-color: white;
+  width: 225px;
+  height: 65px;
+  font-size: 20px;
+}
+.header__menu-item:nth-child(4) {
+  display: none;
+}
+.s2-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 40px 0;
+}
+.s2-header-logo h1 {
+  font-size: 40px;
+}
+.s2-header-buttons nav {
+  display: flex;
+  gap: 30px;
+}
+.s2-header-buttons nav button {
+  border-radius: 20px;
+  background-color: #d4e8d9;
+  padding: 5px 10px;
+  border: none;
+}
+.s2-card {
+  background: #e1ede6;
+  padding: 20px;
+  height: 690px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.s2-card img {
+  width: 100%;
+  align-self: center;
+}
+.s2-card:nth-child(2) {
+  padding: 20px 0 10px 0;
+}
+.s2-card p:nth-child(4) {
+  padding: 0px 0 30px 0;
+}
+.s2-card p:nth-child(5) {
+  padding: 0px 0 20px 0;
+}
+.s2-card h1 {
+  padding: 0 0 8px 0;
+  font-size: 30px;
+}
+.s2-card p {
+  font-size: 18px;
+}
+.s2-card button {
+  width: 310px;
+  height: 65px;
+  background-color: white;
+  border: 1px solid #598d66;
+  color: #598d66;
+  font-size: 20px;
+}
