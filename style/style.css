@@ -40,12 +40,22 @@
   font-weight: 500;
   text-decoration: none;
   color: black;
+  transition: 0.6s;
+}
+.header__menu-link:hover {
+  transition: 0.6s;
+  font-weight: 700;
+}
+.header__menu-link:active {
+  transition: 0.6s;
+  color: #598d66;
 }
 
 .header__menu-button {
   background: none;
   border: none;
   cursor: pointer;
+  transition: 0.6s;
 }
 .s1-card h1 strong {
   color: #598d66;
@@ -69,6 +79,17 @@
   width: 225px;
   height: 65px;
   font-size: 20px;
+  transition: 0.6s;
+}
+.s1-card button:hover {
+  transition: 0.6s;
+  background-color: #598d66;
+  color: white;
+}
+.s1-card button:active {
+  transition: 0.6s;
+  background-color: white;
+  color: #598d66;
 }
 .header__menu-item:nth-child(4) {
   display: none;
@@ -76,20 +97,39 @@
 .s2-header {
   display: flex;
   justify-content: space-between;
-  padding: 0 0 40px 0;
+  padding: 0 20px 40px 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 80px;
 }
 .s2-header-logo h1 {
   font-size: 40px;
 }
-.s2-header-buttons nav {
+.s2-header-buttons .s2-nav {
   display: flex;
   gap: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
 .s2-header-buttons nav button {
+  width: 100%;
   border-radius: 20px;
   background-color: #d4e8d9;
-  padding: 5px 10px;
+  padding: 10px 20px;
   border: none;
+
+  font-size: 20px;
+  transition: 0.6s;
+}
+.s2-header-buttons nav button:hover {
+  transition: 0.6s;
+  background-color: #598d66;
+  color: white;
+}
+.s2-header-buttons nav button:active {
+  transition: 0.6s;
+  background-color: #d4e8d9;
+  color: black;
 }
 .s2-card {
   background: #e1ede6;
@@ -120,11 +160,157 @@
 .s2-card p {
   font-size: 18px;
 }
-.s2-card button {
-  width: 310px;
-  height: 65px;
-  background-color: white;
+.s2-card-button button {
+  background-color: #e1ede6;
   border: 1px solid #598d66;
   color: #598d66;
   font-size: 20px;
+  padding: 21px 155px;
+  width: 100%;
+  white-space: nowrap;
+  transition: 0.6s;
+}
+.s2-card-button button:hover {
+  transition: 0.6s;
+  background-color: #598d66;
+  color: white;
+}
+.s2-card-button button:active {
+  transition: 0.6s;
+  background-color: #e1ede6;
+  color: #598d66;
+}
+.section-3 {
+  background: url(https://s3-alpha-sig.figma.com/img/a3af/165b/6bcdb356971fca2ed6a45d666fd368a5?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Ko1LAkF8wHVQVwtAeKVcXNKnRV-LKCSCzCZjI0wrFspSHyuqvlxBVKAf70fXjbzLAPl80bIGO1NNZb4L-bw0-1PYFzkxi1SkZMwh3mIm2X1zNODw28FtbfxLunyCLbNToLnmPnhPxir~99NcGd8SxJR~rPLC~E2b4vewBG26RZ88TO1nTkWBUnmg6kuZRk2WEegl8T2lUGDgc69KvvkCKksH0sZWxic092h5GNZ5PPhhS0kTKwQh1uwJgfFwls3U5nwpPX3Udxq0VnkvRA61wD~sc79H0N7WnuOWqosq47u6WS0ZKJSUZ~EhATTjnzSDXMf7rrCqRDTPCDBeTD9LXw__)
+    no-repeat center/cover;
+  width: 100%;
+}
+.s3-container {
+  max-width: 1440px;
+  padding: 70px 0 70px 165px;
+}
+.s3-h1 {
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  gap: 30px;
+  color: white;
+  padding: 0 0 20px 0;
+  width: 650px;
+  height: 150px;
+}
+.s3-h1 h1 {
+  font-weight: 500;
+}
+.s3-text {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 540px;
+  height: 300px;
+}
+.s3-text p {
+  font-weight: 500;
+}
+.s3-text:nth-child(2) {
+  padding: 0 0 60px 0;
+}
+.s3-button {
+  padding: 20px 60px;
+  background-color: #eedb6d;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  color: #2c2d35;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.s3-button:hover {
+  background-color: #2c2d35;
+  transition: 0.6s;
+  color: #eedb6d;
+}
+.s3-button:active {
+  background-color: #eedb6d;
+  color: #2c2d35;
+  transition: 0.6s;
+}
+.section-4 {
+  padding: 50px 0px;
+}
+.s4-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  height: 400px;
+  padding: 124px 0px 0;
+}
+.s4-h1 {
+  font-size: 40px;
+}
+.s4-text {
+  width: 635px;
+  font-size: 18px;
+}
+.s4-squad {
+  display: flex;
+  gap: 30px;
+}
+.footer {
+  background-color: #e1ede6;
+  height: 169px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 23px 0 0 0;
+}
+.footer-nav {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap ;
+}
+.footer-card h1 {
+  font-size: 20px;
+}
+.footer-card p {
+  font-size: 18px;
+  color: #86928b;
+}
+.footer-social_media-logo {
+  display: flex;
+  gap: 30px;
+  padding: 0 0 10px 0;
+}
+.footer-card {
+  line-height: 30px;
+}
+.footer-official {
+  color: #86928b;
+  line-height: 23px;
+}
+.footer__logo img {
+  padding: 0 0 43px 0;
+}
+
+.footer-contacts p:nth-child(1) {
+  font-size: 20px;
+}
+
+.footer-contacts p:nth-child(2) {
+  color: #86928b;
+}
+
+.col-6-advanced {
+  padding: 15px;
+}
+.row-advanced {
+  margin: 0 -15px;
+}
+.s4-card-col{
+  width: 50%;
+  padding: 15px;
 }
